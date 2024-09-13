@@ -57,6 +57,10 @@ npm start
 ```
 
 The server will start running on `http://localhost:3000` (or the port you specified in the `.env` file).
+or use below link in place of `http://localhost:3000` to try
+```
+https://ajit-nodejs-todo-list.vercel.app
+```
 
 ## API Endpoints
 
