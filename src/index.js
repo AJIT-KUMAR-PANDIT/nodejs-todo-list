@@ -17,6 +17,15 @@ connectDB();
 // Routes
 app.use('/api/tasks', taskRoutes);
 
+// checking API health
+app.get('/', (req, res) => {
+    const currentTime = new Date().toISOString();
+    res.json({ status: 'API is healthy', time: currentTime });
+});
+
+
+
+
 // Error handling middleware
 app.use(errorHandler);
 
