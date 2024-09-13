@@ -135,6 +135,8 @@ You can use Postman to test the API endpoints. Here are examples for each route:
 
 - Method: POST
 - URL: `http://localhost:3000/api/tasks`
+- or
+- URL: `https://ajit-nodejs-todo-list.vercel.app/api/tasks`
 - Body (raw JSON):
   ```json
   {
@@ -149,17 +151,23 @@ You can use Postman to test the API endpoints. Here are examples for each route:
 
 - Method: GET
 - URL: `http://localhost:3000/api/tasks`
+- or
+- URL: `https://ajit-nodejs-todo-list.vercel.app/api/tasks`
 
 ### 3. Mark a task as completed
 
 - Method: PATCH
 - URL: `http://localhost:3000/api/tasks/:id/complete`
+- or
+- URL: `https://ajit-nodejs-todo-list.vercel.app/api/tasks/:id/complete`
   (Replace `:id` with the actual task ID)
 
 ### 4. Edit a task
 
 - Method: PUT
 - URL: `http://localhost:3000/api/tasks/:id`
+- or
+- URL: `https://ajit-nodejs-todo-list.vercel.app/api/tasks/:id`
   (Replace `:id` with the actual task ID)
 - Body (raw JSON):
   ```json
@@ -175,12 +183,16 @@ You can use Postman to test the API endpoints. Here are examples for each route:
 
 - Method: DELETE
 - URL: `http://localhost:3000/api/tasks/:id`
+- or
+- URL: `https://ajit-nodejs-todo-list.vercel.app/api/tasks/:id`
   (Replace `:id` with the actual task ID)
 
 ### 6. Get tasks by category
 
 - Method: GET
 - URL: `http://localhost:3000/api/tasks/category/:category`
+- or
+- URL: `https://ajit-nodejs-todo-list.vercel.app/tasks/category/:category`
   (Replace `:category` with the actual category name, e.g., "Work")
 
 ### Steps to test with Postman:
@@ -199,29 +211,6 @@ Remember to replace `:id` in the URLs with an actual task ID when testing. You c
 The application uses a global error handling middleware to catch and respond to errors consistently. In development mode, it provides detailed error messages, while in production, it gives a generic error message for security reasons.
 
 When testing with Postman, you may encounter error responses. These will typically include a status code and an error message to help you understand what went wrong.
-
-## Testing
-
-To run automated tests (once implemented), use:
-
-```
-npm test
-```
-
-## Contributing
-
-Contributions to this project are welcome. Please follow these steps:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-5. Push to the branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Contact
 
